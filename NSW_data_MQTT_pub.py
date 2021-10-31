@@ -22,7 +22,7 @@ import time
 STATIONID = 'KJQF'
 
 # MQTT broker info
-BROKER_IP = "192.168.50.48"
+BROKER_IP = ""
 PORT = 1883
 USER_NAME = ''
 PASSWORD = ''
