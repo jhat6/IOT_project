@@ -1,0 +1,18 @@
+Start Mosquitto Broker:
+
+	sudo systemctl start mosquitto
+
+Start Grafana server:
+
+	sudo systemctl start grafana-server
+
+Subscribe to a MQTT topic:
+	
+	sudo mosquitto_sub -h "[IP Address]" -p "[port]" -u [user name] -P [pwd] -F '@Y-@m-@dT@H:@M:@S@z : %t : %p' -t '[topic]'
+
+Open influx database:
+
+	influx -precision rfc3339
+
+
+
